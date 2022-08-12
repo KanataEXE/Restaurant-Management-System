@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-4">Administration</span>
+          </a>
+    
+        </header>
+    </div>
+
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Ordered Menu</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Customer Data</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <h2>Ordered Menu</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Menu</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Paket A</td>
+                            <td>1</td>
+                            <td>30000</td>
+                            <td>
+                                <button type="button" class="btn btn-primary">Update</button>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Paket A</td>
+                            <td>1</td>
+                            <td>30000</td>
+                            <td>
+                                <button type="button" class="btn btn-primary">Update</button>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Paket C</td>
+                            <td>1</td>
+                            <td>30000</td>
+                            <td>
+                                <button type="button" class="btn btn-primary">Update</button>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td>Total Price</td>
+                            <td>90000</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <h2>Customer Data</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Alpha</td>
+                            <td>30</td>
+                            <td>Male</td>
+                            <td>
+                                <button type="button" class="btn btn-primary">Update</button>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Alpha</td>
+                            <td>30</td>
+                            <td>Male</td>
+                            <td>
+                                <button type="button" class="btn btn-primary">Update</button>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Alpha</td>
+                            <td>30</td>
+                            <td>Male</td>
+                            <td>
+                                <button type="button" class="btn btn-primary">Update</button>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>      
+
+    </div>
+    
+    
+
+</body>
+</html>

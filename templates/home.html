@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesen Disini Gan!</title>
+    <link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      function increment(id) {
+         document.getElementById(id).stepUp();
+      }
+      function decrement(id) {
+         document.getElementById(id).stepDown();
+      }
+    </script>
+</head>
+<body>
+    
+	<div>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">Resto</span>
+      </a>
+    </header>
+  </div>
+
+  <div class="container">
+    <center><h1>Welcome!</h1></center>
+  
+    <center><h2>Our Menu</h2></center>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <p>Menu Paket A</p>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary" onclick="increment('input1')">Tambah</button>
+        </div>
+        <div class="col-2">
+          <input id="input1" type=number min="0" value="0">
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-danger" onclick="decrement('input1')">Kurangi</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p>Menu Paket B</p>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary" onclick="increment('input2')">Tambah</button>
+        </div>
+        <div class="col-2">
+          <input id="input2" type=number min="0" value="0">
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-danger" onclick="decrement('input2')">Kurangi</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p>Menu Paket C</p>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary" onclick="increment('input3')">Tambah</button>
+        </div>
+        <div class="col-2">
+          <input id="input3" type=number min="0" value="0">
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-danger" onclick="decrement('input3')">Kurangi</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p>Menu Paket D</p>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary" onclick="increment('input4')">Tambah</button>
+        </div>
+        <div class="col-2">
+          <input id="input4" type=number min="0" value="0">
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-danger" onclick="decrement('input4')">Kurangi</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          
+        </div>
+        <div class="col">
+          
+        </div>
+        <div class="col-2">
+          
+        </div>
+        <div class="col">
+          <a href="/thanks"><button type="button" class="btn btn-primary">Order</button></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
